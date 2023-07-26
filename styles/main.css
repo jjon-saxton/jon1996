@@ -7,9 +7,10 @@ h3 {text-decoration: underline}
 h4 {font-style: italic}
 h5 {font-style: italic; font-weight: none; text-decoration: underline}
 h6 {font-weight: none; text-decoration: underline}
+code {background-color: #464646; font-size: 0.9em; font-family:monospace}
 
 div.status {display:block !important; text-align:center; font-size: 0.8em; font-family:monospace}
-pre.src, code {background-color: #464646; font-size: 0.9em; font-family:monospace}
+pre.src {background-color: #464646; font-size: 0.9em; font-family:monospace}
 
 .blinky {animation:blink 1s linear infinite}
 

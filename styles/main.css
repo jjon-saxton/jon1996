@@ -10,3 +10,10 @@ h6 {font-weight: none; text-decoration: underline}
 
 div.status {display:block !important; text-align:center; font-size: 0.8em; font-family:monospace}
 pre.src, code {background-color: #464646; font-size: 0.9em; font-family:monospace}
+
+.blinky {animation:blink 1s linear infinite}
+
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }

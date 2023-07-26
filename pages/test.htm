@@ -1,12 +1,146 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-  <head>
-    <title>A Test Page</title>
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body bgcolor="#000000" text="#32CD32">
-    <h1>A Test Page</h1>
-    <p>Hello all you awesome people!</p>
-    <p>This rad page collects some old skool HTML tags and stuff. It is designed to showcase what you could do with HTML back around 1996, the year I had started to learn how to build web sites. Right now it is blank, except this text, as I have to remember some of this stuff. Soon I hope it will be full of awesome stuff though!</p>
-  </body>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-07-26 Wed 12:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Test Page</title>
+<meta name="description" content="In the 1990's things were crazy and you never knew what browser would be best for a site...unless they told you ;)" />
+<meta name="generator" content="Org Mode" />
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">A Test Page</h1>
+<p>
+Hello all you awesome people!
+</p>
+
+<p>
+This rad page collects some old skool HTML tags and stuff. It is designed to showcase what you could do with HTML back around 1996, the year I had started to learn how to build web sites. Right now it is blank, except this text, as I have to remember some of this stuff. Soon I hope it will be full of awesome stuff though!
+</p>
+
+<p>
+The idea of this page is to show you the HTML tags or other code snippets and then show examples of how they would look. Now some of these examples may only work in certain older browsers. If that is the case I&rsquo;ll let you know. In fact, the first one is the <code>&lt;marquee&gt;</code> tag. This tag only worked in old versions of Internet Explorer.
+</p>
+
+<div id="outline-container-orge893c3c" class="outline-2">
+<h2 id="orge893c3c">The <code>&lt;marquee&gt;</code> Tag</h2>
+<div class="outline-text-2" id="text-orge893c3c">
+<p>
+Internet Explorer 4+ required (or many modern browsers)
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #50fa7b;">marquee</span>&gt;This tag just scrolled text on a screen&lt;/<span style="color: #50fa7b;">marquee</span>&gt;
+</pre>
+</div>
+
+<marquee>This tag just scrolled text on a screen</marquee>
+
+<p>
+The tag included some attributes, though no one I knew of ever uesed any of them. I&rsquo;ll show a few below, but, for a more detailed list and explinations, you can check out <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee" target="_new">this page</a>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #50fa7b;">marquee</span> <span style="color: #ffc9e8;">scrollamount</span>=<span style="color: #f1fa8c;">"4"</span>&gt;This will slow down the scrolling!&lt;/<span style="color: #50fa7b;">marquee</span>&gt;
+&lt;<span style="color: #50fa7b;">marquee</span> <span style="color: #ffc9e8;">direction</span>=<span style="color: #f1fa8c;">"right"</span>&gt;This text will scroll to the right!&lt;/<span style="color: #50fa7b;">marquee</span>&gt;
+&lt;<span style="color: #50fa7b;">marquee</span> <span style="color: #ffc9e8;">behavior</span>=<span style="color: #f1fa8c;">"slide"</span>&gt;This changes how the text scrolls!&lt;/<span style="color: #50fa7b;">marquee</span>&gt;
+</pre>
+</div>
+
+<marquee scrollamount="4">This will slow down the scrolling!</marquee>
+<marquee direction="right">This text will scroll to the right!</marquee>
+<marquee behavior="slide">This changes how the text scrolls!</marquee>
+
+<p>
+Of course these attributes can be combined! Be warned though it might get crazy!!
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #50fa7b;">marquee</span> <span style="color: #ffc9e8;">behavior</span>=<span style="color: #f1fa8c;">"slide"</span> <span style="color: #ffc9e8;">scrollamount</span>=<span style="color: #f1fa8c;">"4"</span> <span style="color: #ffc9e8;">direction</span>=<span style="color: #f1fa8c;">"right"</span>&gt;This might be a little weird!&lt;/<span style="color: #50fa7b;">marquee</span>&gt;
+</pre>
+</div>
+
+<marquee behavior="slide" scrollamount="4" direction="right">This might be a little weird!</marquee>
+</div>
+</div>
+
+<div id="outline-container-org8fb8c87" class="outline-2">
+<h2 id="org8fb8c87">The <code>&lt;blink&gt;</code> Tag</h2>
+<div class="outline-text-2" id="text-org8fb8c87">
+<p>
+This is one that we have to be careful with today! Netscape Navigator 4+ may required for the examples to work correctly.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #50fa7b;">blink</span>&gt;<span style="color: #1E2029; background-color: #bd93f9;">This text should blink!</span>&lt;/<span style="color: #50fa7b;">blink</span>&gt;
+</pre>
+</div>
+
+<blink>This text should blink!</blink>
+
+<p>
+If the text above is not blinking it&rsquo;s becuase this tag was really only supported by Netscape and, most modern browsers never really supported it. The proper way to make text blink (which may not work in older browsers) uses CSS.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #50fa7b;">style</span>&gt;
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }
+&lt;/<span style="color: #50fa7b;">style</span>&gt;
+&lt;<span style="color: #50fa7b;">span</span> <span style="color: #ffc9e8;">style</span>=<span style="color: #f1fa8c;">"animation:blink 1s linear infinite"</span>&gt;This text will (most likely) blink&lt;/<span style="color: #50fa7b;">span</span>&gt;
+</pre>
+</div>
+
+<style>
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }
+</style>
+<span style="animation:blink 1s linear infinite">This text will (most likely) blink</span>
+
+<p>
+It should be noted that no attributes have been documented for the <code>&lt;blink&gt;</code> tag. It is likely that none existed or that it did not use any unique attributes. Also, if you want to use this tag and still ensure it works in most modern browsers you could do the following:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #50fa7b;">style</span>&gt;
+  blink {animation:blink 1s linear infinite}
+
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }
+&lt;/<span style="color: #50fa7b;">style</span>&gt;
+&lt;<span style="color: #50fa7b;">blink</span>&gt;<span style="color: #1E2029; background-color: #bd93f9;">This text will blink!</span>&lt;/<span style="color: #50fa7b;">blink</span>&gt;
+</pre>
+</div>
+
+<style>
+  blink.ex {animation:blink 1s linear infinite}
+
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }
+</style>
+<blink class="ex">This text will blink!</blink>
+
+<p>
+The CSS inside the <code>&lt;style&gt;</code> tags above can be inside that tag and nested in the document&rsquo;s <code>&lt;head&gt;</code> tag or it can be placed in a seperate .css file.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2023-07-26 Wed 12:57</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.6)</p>
+</div>
+</body>
 </html>

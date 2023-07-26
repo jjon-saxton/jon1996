@@ -7,3 +7,5 @@ h3 {text-decoration: underline}
 h4 {font-style: italic}
 h5 {font-style: italic; font-weight: none; text-decoration: underline}
 h6 {font-weight: none; text-decoration: underline}
+
+div.status {display:block !important; text-align:center; font-size: 0.8em; font-family:monospace}

@@ -1,0 +1,20 @@
+#+TITLE: Best viewed...with eyes
+#+DESCRIPTION: In the 1990's things were crazy and you never knew what browser would be best for a site...unless they told you ;)
+#+AUTHOR: Jon Saxton
+#+HTML_HEAD: <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+
+#+ATTR_HTML: :align left :alt Microsoft Internet Explorer
+[[file:../images/ie.jpg]]
+When the internet was young and HTML standards were still being finalized each machine was different. Each one had different display resolutions and each browser interpreted HTML differently. This led to the raise of webmasters and web designers placing images like the one above on their sites. There's a lot of probable reasons why, and, to be honest, I don't think it was just one reason, but here a few probable causes:
+
++ New/Lazy Developers and Designers who didn't know how or couldn't write their web sites using standards to ensure a good viewing experience on all browsers and devices.
++ Too many new revisions to standards for browser developers to keep up with. Meaning that browsers couldn't support all new standards.
++ Too many browsers attempting to add to the standards
+
+As for this site, well, I wish I could say it will work on all 90's era browsers, but, as I said, its a bit too complicated for that. It will work with either Netscape Communicator or Internet Explorer but the version you use is important. The versions you should use are:
+
+#+ATTR_HTML: :align right :alt Netscape Navigator
+[[file:../images/netscape.jpg]]
+
++ @@html:<a href="http://microsoft.com/ie" target="_parent">Internet Explorer 4.01+</a>@@
++ @@html:<a href="http://netscape.com" target="_parent">Netscape Communicator 4.0.4+</a>@@

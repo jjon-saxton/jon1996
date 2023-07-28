@@ -1,0 +1,92 @@
+#+TITLE: A Test Page
+#+DESCRIPTION: In the 1990's things were crazy and you never knew what browser would be best for a site...unless they told you ;)
+#+AUTHOR: Jon Saxton
+#+HTML_HEAD: <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+
+Hello all you awesome people!
+
+This rad page collects some old skool HTML tags and stuff. It is designed to showcase what you could do with HTML back around 1996, the year I had started to learn how to build web sites. Right now it is blank, except this text, as I have to remember some of this stuff. Soon I hope it will be full of awesome stuff though!
+
+The idea of this page is to show you the HTML tags or other code snippets and then show examples of how they would look. Now some of these examples may only work in certain older browsers. If that is the case I'll let you know. In fact, the first one is the ~<marquee>~ tag. This tag only worked in old versions of Internet Explorer.
+
+* The ~<marquee>~ Tag
+Internet Explorer 4+ required (or many modern browsers)
+
+#+BEGIN_SRC html
+<marquee>This tag just scrolled text on a screen</marquee>
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<marquee>This tag just scrolled text on a screen</marquee>
+#+END_EXPORT
+
+The tag included some attributes, though no one I knew of ever uesed any of them. I'll show a few below, but, for a more detailed list and explinations, you can check out @@html:<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee" target="_new">this page</a>@@.
+
+#+BEGIN_SRC html
+<marquee scrollamount="4">This will slow down the scrolling!</marquee>
+<marquee direction="right">This text will scroll to the right!</marquee>
+<marquee behavior="slide">This changes how the text scrolls!</marquee>
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<marquee scrollamount="4">This will slow down the scrolling!</marquee>
+<marquee direction="right">This text will scroll to the right!</marquee>
+<marquee behavior="slide">This changes how the text scrolls!</marquee>
+#+END_EXPORT
+
+Of course these attributes can be combined! Be warned though it might get crazy!!
+
+#+BEGIN_SRC html
+<marquee behavior="slide" scrollamount="4" direction="right">This might be a little weird!</marquee>
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<marquee behavior="slide" scrollamount="4" direction="right">This might be a little weird!</marquee>
+#+END_EXPORT
+
+* The ~<blink>~ Tag
+This is one that we have to be careful with today! Netscape Navigator 4+ may required for the examples to work correctly.
+
+#+BEGIN_SRC html
+<blink>This text will only blink in old version of Netscape Navigator</blink>
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<blink>This text will only blink in old version of Netscape Navigator</blink>
+#+END_EXPORT
+
+If the text above is not blinking it's becuase this tag was really only supported by Netscape and, most modern browsers never really supported it. The proper way to make text blink (which may not work in older browsers) uses CSS.
+
+#+BEGIN_SRC html
+<style>
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }
+</style>
+<span style="animation:blink 1s linear infinite">This text will blink, but only in modern browsers.</span>
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<span class="blinky">This text will blink, but only in modern browsers.</span>
+#+END_EXPORT
+
+It should be noted that no attributes have been documented for the ~<blink>~ tag. It is likely that none existed or that it did not use any unique attributes. Also, if you want to use this tag and still ensure it works in most modern browsers you could do the following:
+
+#+BEGIN_SRC html
+<style>
+  blink {animation:blink 1s linear infinite}
+
+@keyframes blink{
+  50% {
+    opacity: 0;
+  }
+</style>
+<blink>This text will blink, except in ol' Internet Explorer!</blink>
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<blink class="blinky">This text will blink, except in ol' Internet Explorer!</blink>
+#+END_EXPORT
+
+The CSS inside the ~<style>~ tags above can be inside that tag and nested in the document's ~<head>~ tag or it can be placed in a seperate .css file.

@@ -1,0 +1,15 @@
+#+TITLE: 28 Jul 2023 - Plans for the Site
+#+DESCRIPTION: In the 1990's things were crazy and you never knew what browser would be best for a site...unless they told you ;)
+#+AUTHOR: Jon Saxton
+#+HTML_HEAD: <link href="../../styles/main.css" rel="stylesheet" type="text/css" />
+
+Obviously, this site isn't entirely complete yet. In fact, one of the things that was quite popular to see in the ol' dayz of the internet was "under construction" banners or signs on pages. I had half a mind to put one of those up, but, by the time this site was available for public consumption they would probably be gone anyway. I may still put in a page that talks about under construction signs or maybe I'll put up a general page discussing the landscape of the internet in its early days. For now, though that is not part of the plan.
+
+* Immediate Plans
+At this time I'm looking at gathering and/or making services and sites that will work with older web browsers. The main project I would like to work on would be a matrix client that is HTML 4 compliant, but I also remember some of the things that I used to do on the web and would like to set up things like a guest book or a bulletin board system. A BBS is very complicated so I'll be testing some already made ones, like phpBB to see if they will work in older browsers. I may have to write my own guest book system, but that isn't too complicated.
+
+Services that are not part of the site, whether I end up  building them or not will be linked under a new sections in the navigation sidebar called "External Sites/Services", the guestbook and other services that are part of this site will just be linked under the local site section.
+* Other Future Plans
+Now I'll talk about some of the things that may come about, but I wouldn't count on it just yet. One of those is a page that talks about the landscape of the internet in the 90's, this will be separate from the [[file:../test.org][Test Page]], and will be dedicated to a discussion of practices, but common and best, of web designers and developers during the 90's and how that effected the user experience. I will also likely introduce some of the tools designers used to build the ol' web. Part of this page may talk about "under construction" banners, but this may be dedicated to its own page depending on the amount of content. That said, I am focused on building a list of 90's complaint services and that comes first!
+* Publication
+At the time this was written, this site was hosted on a local intranet. At this time there is no plans to move it to the public web, however, if anyone outside of my immediate family is reading this, than that has changed. I am, however, looking at hosting this on my server, but I am not sure how I want to accomplish this at this time.

@@ -89,4 +89,4 @@ It should be noted that no attributes have been documented for the ~<blink>~ tag
 <blink class="blinky">This text will blink, except in ol' Internet Explorer!</blink>
 #+END_EXPORT
 
-The CSS inside the ~<style>~ tags above can be inside that tag and nested in the document's ~<head>~ tag or it can be placed in a seperate .css file.
+For maximum compatibility, the CSS inside the ~<style>~ tags above should be inside that tag and either nested in the document's ~<head>~ tag or placed in a seperate .css file.

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-07-30 Sun 15:22 -->
+<!-- 2023-08-04 Fri 15:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>A Test Page</title>
@@ -26,9 +26,9 @@ This rad page collects some old skool HTML tags and stuff. It is designed to sho
 The idea of this page is to show you the HTML tags or other code snippets and then show examples of how they would look. Now some of these examples may only work in certain older browsers. If that is the case I&rsquo;ll let you know. In fact, the first one is the <code>&lt;marquee&gt;</code> tag. This tag only worked in old versions of Internet Explorer.
 </p>
 
-<div id="outline-container-orgee990dd" class="outline-2">
-<h2 id="orgee990dd">The <code>&lt;marquee&gt;</code> Tag</h2>
-<div class="outline-text-2" id="text-orgee990dd">
+<div id="outline-container-orgde5917a" class="outline-2">
+<h2 id="orgde5917a">The <code>&lt;marquee&gt;</code> Tag</h2>
+<div class="outline-text-2" id="text-orgde5917a">
 <p>
 Internet Explorer 4+ required (or many modern browsers)
 </p>
@@ -68,9 +68,9 @@ Of course these attributes can be combined! Be warned though it might get crazy!
 </div>
 </div>
 
-<div id="outline-container-org8f8ee77" class="outline-2">
-<h2 id="org8f8ee77">The <code>&lt;blink&gt;</code> Tag</h2>
-<div class="outline-text-2" id="text-org8f8ee77">
+<div id="outline-container-orge0c4045" class="outline-2">
+<h2 id="orge0c4045">The <code>&lt;blink&gt;</code> Tag</h2>
+<div class="outline-text-2" id="text-orge0c4045">
 <p>
 This is one that we have to be careful with today! Netscape Navigator 4+ may required for the examples to work correctly.
 </p>
@@ -119,13 +119,67 @@ It should be noted that no attributes have been documented for the <code>&lt;bli
 <blink class="blinky">This text will blink, except in ol' Internet Explorer!</blink>
 
 <p>
-For maximum compatibility, the CSS inside the <code>&lt;style&gt;</code> tags above should be inside that tag and either nested in the document&rsquo;s <code>&lt;head&gt;</code> tag or placed in a seperate .css file.
+For maximum compatibility, the CSS inside the <code>&lt;style&gt;</code> tags above should be inside that tag and either nested in the document&rsquo;s <code>&lt;head&gt;</code> tag or placed in a separate .css file.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb00b5b1" class="outline-2">
+<h2 id="orgb00b5b1">Frames!</h2>
+<div class="outline-text-2" id="text-orgb00b5b1">
+<p>
+One of the most used design tricks in the 1990&rsquo;s was the use of frames. Frames divided a web page into two or more sections and let designers place different web pages in those sections. This was often used to add a static and persistent side bar to a page like how it is used on this site! This meant that users could have a side bar for navigation and that the web designer/developer didn&rsquo;t need to update every single page any time a link was added, edited, or removed. This was the reason I used frames for just about every site I made back in the day. You see if you used an HTML editor like Dreamweaver, this was less needed. Designers would write a template and then each page would link to that template. Updating the template would auto-magically update each page, but, for those of us who had to do everything by hand, this was a bit tedious, so frames were a good thing. They have fallen out of favor now since we have ajax and other methods of updating only portions of a page so they aren&rsquo;t needed any more, but they were very helpful before such technologies existed.
+</p>
+
+<p>
+Frames could be simple, like this site, with only two columns or two rows, as shown by the code below taken directly from the main index source of this site:
+</p>
+<div class="org-src-container">
+<pre class="src src-html">  &lt;<span style="color: #50fa7b;">frameset</span> <span style="color: #ffc9e8;">cols</span>=<span style="color: #f1fa8c;">"25%, 75%"</span>&gt;
+    &lt;<span style="color: #50fa7b;">frame</span> <span style="color: #ffc9e8;">name</span>=<span style="color: #f1fa8c;">"navbar"</span> <span style="color: #ffc9e8;">src</span>=<span style="color: #f1fa8c;">"./frames/nav.htm"</span> /&gt;
+    &lt;<span style="color: #50fa7b;">frame</span> <span style="color: #ffc9e8;">name</span>=<span style="color: #f1fa8c;">"main"</span> <span style="color: #ffc9e8;">src</span>=<span style="color: #f1fa8c;">"./frames/home.htm"</span> /&gt;
+    &lt;<span style="color: #50fa7b;">noframes</span>&gt;
+      &lt;<span style="color: #50fa7b;">p</span>&gt;This browser does not support frames and is not well-suited for the 1996 experience. It is either too new, or too old. Please use an era-appropriate browser like Netscape Navigator 3&lt;/<span style="color: #50fa7b;">p</span>&gt;
+    &lt;/<span style="color: #50fa7b;">noframes</span>&gt;
+  &lt;/<span style="color: #50fa7b;">frameset</span>&gt;
+</pre>
+</div>
+<p>
+The <code>&lt;noframes&gt;</code> tag told browsers what do display if that didn&rsquo;t support frames, this was mostly used by very old browsers or text-only browsers. Most designers would actually put a link to the navigation page or an alternate version of the site made for text-only browsers, or, if they were lazy, just say something like what I have in that example.
+</p>
+
+<p>
+Frames could also be extremely complex with multiple rows and columns, as shown here:
+</p>
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #50fa7b;">frameset</span> <span style="color: #ffc9e8;">rows</span>=<span style="color: #f1fa8c;">"20px,*,20px"</span> /&gt;
+  &lt;<span style="color: #50fa7b;">frame</span> <span style="color: #ffc9e8;">name</span>=<span style="color: #f1fa8c;">"top"</span> <span style="color: #ffc9e8;">src</span>=<span style="color: #f1fa8c;">"./top.htm"</span> /&gt;
+  &lt;<span style="color: #50fa7b;">frameset</span> <span style="color: #ffc9e8;">cols</span>=<span style="color: #f1fa8c;">"200px,*,20px"</span> /&gt;
+    &lt;<span style="color: #50fa7b;">frame</span> <span style="color: #ffc9e8;">name</span>=<span style="color: #f1fa8c;">"navbar"</span> <span style="color: #ffc9e8;">src</span>=<span style="color: #f1fa8c;">"./nav.htm"</span> /&gt;
+    &lt;<span style="color: #50fa7b;">frame</span> <span style="color: #ffc9e8;">name</span>=<span style="color: #f1fa8c;">"main"</span> <span style="color: #ffc9e8;">src</span>=<span style="color: #f1fa8c;">"./home.htm"</span> /&gt;
+    &lt;<span style="color: #50fa7b;">frame</span> <span style="color: #ffc9e8;">name</span>=<span style="color: #f1fa8c;">"right"</span> <span style="color: #ffc9e8;">src</span>=<span style="color: #f1fa8c;">"./right.htm"</span> /&gt;
+  &lt;/<span style="color: #50fa7b;">frameset</span>&gt;
+  &lt;<span style="color: #50fa7b;">frame</span> <span style="color: #ffc9e8;">name</span>=<span style="color: #f1fa8c;">"bot"</span> <span style="color: #ffc9e8;">src</span>=<span style="color: #f1fa8c;">"./bottom.htm"</span> /&gt;
+&lt;/<span style="color: #50fa7b;">frameset</span>&gt;
+</pre>
+</div>
+<p>
+I used some pretty complicated frames and some very interesting artistic skills to create some pretty interesting looking sites. I&rsquo;ll see if I can find some and at least give you a screen shot of them, because they were really quite creative, if I do say so myself.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org644dac2" class="outline-2">
+<h2 id="org644dac2">Image maps</h2>
+<div class="outline-text-2" id="text-org644dac2">
+<p>
+Image maps were an interesting concept. The idea was that you could split parts of an image up and then place hyperlinks in those parts and the user can then click that part of the image and go to another page. I don&rsquo;t have any example of this yet as I didn&rsquo;t use it much except for some navigation buttons placed in a single banner image, but I&rsquo;ll see if I can put up some examples soon and describe this in a bit more detail.
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2023-07-30 Sun 15:22</p>
+<p class="date">Created: 2023-08-04 Fri 15:07</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.6)</p>
 </div>
 </body>

@@ -89,4 +89,36 @@ It should be noted that no attributes have been documented for the ~<blink>~ tag
 <blink class="blinky">This text will blink, except in ol' Internet Explorer!</blink>
 #+END_EXPORT
 
-For maximum compatibility, the CSS inside the ~<style>~ tags above should be inside that tag and either nested in the document's ~<head>~ tag or placed in a seperate .css file.
+For maximum compatibility, the CSS inside the ~<style>~ tags above should be inside that tag and either nested in the document's ~<head>~ tag or placed in a separate .css file.
+
+* Frames!
+One of the most used design tricks in the 1990's was the use of frames. Frames divided a web page into two or more sections and let designers place different web pages in those sections. This was often used to add a static and persistent side bar to a page like how it is used on this site! This meant that users could have a side bar for navigation and that the web designer/developer didn't need to update every single page any time a link was added, edited, or removed. This was the reason I used frames for just about every site I made back in the day. You see if you used an HTML editor like Dreamweaver, this was less needed. Designers would write a template and then each page would link to that template. Updating the template would auto-magically update each page, but, for those of us who had to do everything by hand, this was a bit tedious, so frames were a good thing. They have fallen out of favor now since we have ajax and other methods of updating only portions of a page so they aren't needed any more, but they were very helpful before such technologies existed.
+
+Frames could be simple, like this site, with only two columns or two rows, as shown by the code below taken directly from the main index source of this site:
+#+BEGIN_SRC html
+  <frameset cols="25%, 75%">
+    <frame name="navbar" src="./frames/nav.htm" />
+    <frame name="main" src="./frames/home.htm" />
+    <noframes>
+      <p>This browser does not support frames and is not well-suited for the 1996 experience. It is either too new, or too old. Please use an era-appropriate browser like Netscape Navigator 3</p>
+    </noframes>
+  </frameset>
+#+END_SRC
+The ~<noframes>~ tag told browsers what do display if that didn't support frames, this was mostly used by very old browsers or text-only browsers. Most designers would actually put a link to the navigation page or an alternate version of the site made for text-only browsers, or, if they were lazy, just say something like what I have in that example.
+
+Frames could also be extremely complex with multiple rows and columns, as shown here:
+#+BEGIN_SRC html
+<frameset rows="20px,*,20px" />
+  <frame name="top" src="./top.htm" />
+  <frameset cols="200px,*,20px" />
+    <frame name="navbar" src="./nav.htm" />
+    <frame name="main" src="./home.htm" />
+    <frame name="right" src="./right.htm" />
+  </frameset>
+  <frame name="bot" src="./bottom.htm" />
+</frameset>
+#+END_SRC
+I used some pretty complicated frames and some very interesting artistic skills to create some pretty interesting looking sites. I'll see if I can find some and at least give you a screen shot of them, because they were really quite creative, if I do say so myself.
+
+* Image maps
+Image maps were an interesting concept. The idea was that you could split parts of an image up and then place hyperlinks in those parts and the user can then click that part of the image and go to another page. I don't have any example of this yet as I didn't use it much except for some navigation buttons placed in a single banner image, but I'll see if I can put up some examples soon and describe this in a bit more detail.

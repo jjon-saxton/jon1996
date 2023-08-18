@@ -1,0 +1,12 @@
+#+TITLE: 17 Aug 2023 - Image Maps
+#+DESCRIPTION: Fleshed out the image map part of the test page this week!
+#+AUTHOR: Jon Saxton
+#+HTML_HEAD: <link href="../../styles/main.css" rel="stylesheet" type="text/css" />
+
+Not mentioned happened this week. More dissertation stuff with time in there somewhere for work and gaming. Oh! There was a little time to work on this site, update my emacs configuration for transparency, and flesh out a desktop environment revolving around QTile, LxQT, and Waylang. So I guess a *lot* happened this week! First this site!
+* More information about image maps!
+I have fleshed out the information on image maps in the [[file:../test.org][test page]]. As I mentioned on that page, I didn't really use image maps much, but I saw them used quite a bit when I was browsing. Even companies would use them for navigation banners. Actually I'd love to find an archive of a site that used it, but I'll leave that for another time. Right now I'm using a site I used to use a lot to learn new HTML, don't worry it is linked in that page. Basically all I did was create a /slightly/ more simple example and explain a few more things about the tags and how I remembered them being used in the old times. It works though for now. Hopefully I'll be able to think of other things to put on that page that actually demonstrate how I used to code, or how I saw other code back in the day. For now, enjoy what's there!
+* Let's talk about Linux
+Because work and school is boring, we'll talk about Linux instead! I am just about finished with a custom desktop environment that uses QTitle as a Wayland compositor and a few utilities from LxQT, namely PCManFM-QT and LxQT-Archiver. The main star of the show, basically, is still Emacs. Though PCManFM-QT is installed now, Emacs and dired are still the primary file manager. Mostly, this week, I configured the QT applications to use Kvantum with a Dracula theme and fixed GTK4 applications to also use a Dracula theme. I also am almost done with my QTile config. I still need to find a emoji to use as an icon for the system section of the top bar, but I'm almost there. I'll get a screen shot of it in action some time soon and the config will go up on my github once I have it converted to a literate program document. That'll be another little while though.
+
+Anyway, that's it for updates for this week. Look forward to next week!

@@ -15,6 +15,12 @@ div.form {margin:auto; width:85%}
 div.form label, div.form input, div.form textarea {display:block !important}
 div.form input, div.form textarea {width:100%}
 
+div.entry {width:90%;margin:auto;margin-bottom:5px}
+div.guestbook {background-color:#ffffe0; color:#464646;padding:2px}
+div.guestbook a:link, div.guestbook a:visited, div.guestbook a:active, div.guestbook a:hover {color:#776699}
+div.guestbook .info {font-weight:bold;font-family:sans-serif;font-size:1.1em}
+div.guestbook .message {font-family:cursive}
+
 .blinky {animation:blink 1s linear infinite}
 
 @keyframes blink{

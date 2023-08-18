@@ -121,4 +121,17 @@ Frames could also be extremely complex with multiple rows and columns, as shown 
 I used some pretty complicated frames and some very interesting artistic skills to create some pretty interesting looking sites. I'll see if I can find some and at least give you a screen shot of them, because they were really quite creative, if I do say so myself.
 
 * Image maps
-Image maps were an interesting concept. The idea was that you could split parts of an image up and then place hyperlinks in those parts and the user can then click that part of the image and go to another page. I don't have any example of this yet as I didn't use it much except for some navigation buttons placed in a single banner image, but I'll see if I can put up some examples soon and describe this in a bit more detail.
+Image maps were an interesting concept. The idea was that you could split parts of an image up and then place hyperlinks in those parts and the user can then click that part of the image and go to another page. I don't have any example of this yet as I didn't use it much except for some navigation buttons placed in a single banner image, but [[https://www.w3schools.com/htmL/html_images_imagemap.asp][W3schools]] has some information on how this would be done today. Most of this should be the same has it was back when it was more popular. Basically the image map encompassed /two/ tags the ~<map>~ tag and the ~<area>~ tag. Where the ~<area>~ tag defined the clickable areas and the ~<map>~ defined the actual image map. It should be noted that the map did *not* include the image itself, this was still handled by the ~<img>~ tag. Here is an example similar to the one W3schools used.
+
+#+BEGIN_SRC html
+<img src="./images/topbanner.jpg" alt="A banner including clickable navigation links" usemap="#navMap" />
+
+<map name="navMap">
+  <area shape="rect" coords="0,0,70,20" alt="Home" href="./home.htm" />
+  <area shape="rect" coords="70,0,140,20" alt="About Us" href="./aboutus.htm" />
+</map>
+#+END_SRC
+
+I don't have an asset made to demonstrate this, but you can get the idea from the page a linked in the last paragraph. Basically, the ~<img>~ tag uses the attribute, "usemap" to tell the browser to overly the ~<map>~ named "navMap" on top of the image. The ~<area>~ tags then define clickable areas within the map that will be overlaid. In this case to rectangles next to each other that are both about 70 pixles wide and 20 pixles tall with the first starting at the top left corner of the screen (0,0) and the second starting 70 pixles to the right of that one (70,0). There were even other shapes that could be defined including "circle" or "poly" (custom polygon), or "default" (which would just use the whole region).
+
+As you could imagine this was a complex thing to implement as you would have to do mine the exact coordinates for each part of an area, which get even more complex with the "poly" shape. I never did this by hand, in fact, I doubt many designers did. Instead, we relayed on image map generators. Some times an HTML generator would serve this function, but I used an [[https://imagemap.org/][online tool]] when I generated the one image map I used.

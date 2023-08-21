@@ -1,0 +1,8 @@
+#+TITLE: Search Engines!
+#+DESCRIPTION: In the 1990's things were crazy and you never knew what browser would be best for a site...unless they told you ;)
+#+AUTHOR: Jon Saxton
+#+HTML_HEAD: <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+
+Admittedly I'm not sure how things are really done today, in fact I had [[https://forums.onigirionegai.info/viewtopic.php?t=23][a poll up]]* to ask, but, at least when the internet was young it was really about two things, BBS and Search Engines. In fact, the internet was very daunting when it was only bulletin board systems. Search directories (think something more like early Yahoo!) and search engines (like Google) really helped serve as a portal. It was simple text box on a screen sometimes along with links for other services and popular sites that let the user describe what they were looking for and get results of web sites to visit. Search was where the internet lived in the 90's and it was great! Everything really did feel like it was right at your figure-tips, even if the engines were quite as good as they are now.
+
+If you want to know what engines and directories were popular I keep a list in the navigation bar, you may have even seen it if you came here from there. Check them out! Each one is a snap shot of what the engines looked like back in 1996. They may not function well or at all now, but you'll get a good idea of how they felt. Check out the rest of the navigation bar for more information and maybe even some working search engines that work with your old browsers!

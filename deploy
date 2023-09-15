@@ -5,7 +5,7 @@ DIR=1996_html
 DATE=$(date -Idate)
 
 git add -A &&
-sync -avz --delete public/ ${USER}@${HOST}:~/${DIR} &&
+rsync -avz --delete ./ ${USER}@${HOST}:~/${DIR} &&
 git commit -am "build: ${DATE}" &&
 git push
 

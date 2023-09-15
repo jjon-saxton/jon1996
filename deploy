@@ -1,0 +1,12 @@
+#!/bin/sh
+USER=jon
+HOST=onigirionegai.info
+DIR=1996_html
+DATE=$(date -Idate)
+
+git add -A &&
+sync -avz --delete public/ ${USER}@${HOST}:~/${DIR} &&
+git commit -am "build: ${DATE}" &&
+git push
+
+exit 0

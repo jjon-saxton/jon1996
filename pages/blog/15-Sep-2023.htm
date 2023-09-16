@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-09-15 Fri 19:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>15 Sep 2023 - This site is up!</title>
+<meta name="description" content="Explaining that I am now focusing on the main site while looking for the best way to publish this one" />
+<meta name="generator" content="Org Mode" />
+<link href="../../styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">15 Sep 2023 - This site is up!</h1>
+<p>
+You see all those previous news posts? Good, I&rsquo;m glad I&rsquo;m not the only one. Anyway they were all actually written <i>before</i> this site went public. That&rsquo;s right I wrote a bunch of news articles even before I published this site. Its not quite weird, because I always kind of knew I wanted to release this site somehow. This, rather short, post marks the first post that is written <i>after</i> the site is published. Of course it is mostly just here to celebrate the release, but I wanted to talk a little bit about how this publication model of this site differs from some of my other sites.
+</p>
+
+<div id="outline-container-orgd3f08c3" class="outline-2">
+<h2 id="orgd3f08c3">Published like its 1996&#x2026;not really&#x2026;</h2>
+<div class="outline-text-2" id="text-orgd3f08c3">
+<p>
+Let me first discuss how I used to publish my site back when I was a young, fledgling, web developer. As I was first starting out publishing a web site was kind of a clunky task. Many of my sites were on free hosting platforms and they were very limited in how you could upload to them. Many of them used a Java-based web file manager. If you were lucky these would have a Java applet that would allow you to select multiple files to upload or would allow you writable access to your site&rsquo;s folder via FTP. For the most part those it was single file uploads. This meant the first deploy would require you to upload many files and folders one-at-a-time in a clunky, not very reliable HTTP form or Java platform. This could be very frustrating. Of course, for those sites that did offer FTP, this was much easier, though you still often had to know which files to upload in ASCII and which to upload in binary, if you wanted to be able to edit files later, though this was not usually that big of a deal as later FTP clients, including FireFTP (a bone-fide FTP client that ran as an addon for Firefox) would intelligently decide on upload type via a combination of file extensions and MIME types.
+</p>
+
+<p>
+Of course, after the first deploy, Things typically got smoother. If you decided a site similar to this one, one that used frames and a separate file for navigation, you typically only needed to upload two files when adding a new page, the new page itself, and an updated navigation page. In fact, this <i>may</i> be the reason this type of design was so popular for fan sites. Needless to say, this is <b>not</b> how things are done today, even with this site.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbb49588" class="outline-2">
+<h2 id="orgbb49588">Dreamweaver and other editors, published like its 2000, nope</h2>
+<div class="outline-text-2" id="text-orgbb49588">
+<p>
+A bit later in my career I went back to editors, specifically Adobe Dreamweaver. This allowed for publishing and syncing a site via ether SFTP or FTP. This, along with Dreamweaver&rsquo;s template system allowed for new site designs and made uploading sites fairly easy. Of course, by this time, I had moved on from free hosting and most of the paid hosting, if not all, at least offered FTP and many even supported SFTP uploads. Both maintaining a site and the initial publication was very simple. In fact, up until very recently, I used Dreamweaver for maintaining and publishing sites even if I was writing much of the code by hand.
+</p>
+</div>
+</div>
+<div id="outline-container-org38b39b2" class="outline-2">
+<h2 id="org38b39b2">Modern versioning systems&#x2026;not that either&#x2026;too modern</h2>
+<div class="outline-text-2" id="text-org38b39b2">
+<p>
+It should be noted that I don&rsquo;t do that anymore. Much of my code is now hosted on GitHub and I will often have a testing branch and a master or publication branch. For a web site or web application, I&rsquo;ll write code, push it to the testing branch, pull the changes to a testing server, test it a bit, then merge to the publication branch and pull that to a production server. This makes it really easy to work with the site, even easier than Dreamweaver, but I didn&rsquo;t want to 1) relay on such a modern solution, and 2) host the bare Github repo in two places for this rather simple site.
+</p>
+</div>
+</div>
+<div id="outline-container-org4fca9a2" class="outline-2">
+<h2 id="org4fca9a2">Rync to the rescue!</h2>
+<div class="outline-text-2" id="text-org4fca9a2">
+<p>
+This site is actually pushed via SSH and rsync. Most pages are written in Org mode (as noted at the bottom of those page), exported to HTML, then rsync will transfer them to the server via SSH. I <i>could</i> set up a cron job to do this on a schedule, but, because I don&rsquo;t have a schedule for edits yet, I opted to creating a script and excuting that when I&rsquo;m ready to deploy. This is similar to how the main site is deployed, only that has the added step of calling Hugo to build the updated site, which is not needed as I handle that with project exports in Emacs for this site. Its both a modern and retro solution, and I think it is perfect for this site!
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2023-09-15 Fri 19:54</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.1 (<a href="https://orgmode.org">Org</a> mode 9.7)</p>
+</div>
+</body>
+</html>

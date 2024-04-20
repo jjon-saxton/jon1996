@@ -1,4 +1,4 @@
-#+title: 14 Sep 2024 - JavaScript...The Scourge!
+#+title: 14 Apr 2024 - JavaScript...The Scourge!
 #+description: Explaining why JavaScript is bad and what can be done about it
 #+author: Jon Saxton
 #+html_head: <link href="../../styles/main.css" rel="stylesheet" type="text/css" />

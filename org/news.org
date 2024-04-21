@@ -2,6 +2,8 @@
 #+DESCRIPTION: In the 1990's things were crazy and you never knew what browser would be best for a site...unless they told you ;)
 #+AUTHOR: Jon Saxton
 #+HTML_HEAD: <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+#+HTML_LINK_HOME: http://1996.onigirionegai.info/
+#+HTML_LINK_UP: ../apps/cmd/
 
 In the mid to late 1990's, there was a new type of website that popped up. These sites were dedicated to people's opinions or news. We called them weblogs, but this wasn't eventually shortened to just blog. In the modern age, these have largely be replaced by macro-blogs like Twitter or social sites like Facebook, but, before then, the blog was the way to put your opinions out there. Here, I will be putting a my own thoughts about various topics, but this will remain mostly a place for site news.
 
